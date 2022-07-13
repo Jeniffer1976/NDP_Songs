@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">NDP_Songs</string>
+    <string name="enter_a_song_title_here">Enter a song title here</string>
+    <string name="singers">Singers</string>
+    <string name="enter_a_singer_s_name_here">Enter a singer\'s name here</string>
+    <string name="year">Year</string>
+    <string name="enter_year_of_release_here">Enter year of release here</string>
+    <string name="stars">Stars</string>
+    <string name="title">Title</string>
+    <string name="show_all_songs_with_5_stars">Show all songs with 5 stars</string>
+    <string name="show_all_songs">Show all songs</string>
+    <string name="insert">Insert</string>
+    <string name="show_list">Show List</string>
+    <string name="song_id">Song Id</string>
+    <string name="cancel">Cancel</string>
+    <string name="delete">Delete</string>
+    <string name="update">Update</string>
+    <string-array name="spinnerItems">
+        <item>Yes</item>
+        <item>No</item>
+    </string-array>
+</resources>
