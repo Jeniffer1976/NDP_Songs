@@ -8,7 +8,6 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.RatingBar;
-import android.widget.Toast;
 
 public class EditActivity extends AppCompatActivity {
     EditText etId, etTitle, etSinger, etYear;
