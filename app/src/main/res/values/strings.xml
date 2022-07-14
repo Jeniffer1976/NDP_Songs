@@ -15,8 +15,4 @@
     <string name="cancel">Cancel</string>
     <string name="delete">Delete</string>
     <string name="update">Update</string>
-    <string-array name="spinnerItems">
-        <item>Yes</item>
-        <item>No</item>
-    </string-array>
 </resources>
