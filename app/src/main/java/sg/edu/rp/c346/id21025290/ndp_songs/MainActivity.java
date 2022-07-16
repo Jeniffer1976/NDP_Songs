@@ -7,13 +7,17 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.RadioButton;
+import android.widget.RadioGroup;
 import android.widget.RatingBar;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
     EditText etTitle, etSinger, etYear;
-    RatingBar rbStars;
+    RadioGroup rgStars;
     Button btnInsert, btnShowList;
+    RadioButton rbSelected;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
         etTitle = findViewById(R.id.editTextTitle);
         etSinger = findViewById(R.id.editTextSingers);
         etYear = findViewById(R.id.editTextYear);
-        rbStars = findViewById(R.id.ratingBarStars);
+        rgStars = findViewById(R.id.rgStars);
         btnInsert = findViewById(R.id.btnInsert);
         btnShowList = findViewById(R.id.btnShowList);
 
@@ -33,7 +37,9 @@ public class MainActivity extends AppCompatActivity {
                 String title = etTitle.getText().toString();
                 String singers = etSinger.getText().toString();
                 int year = Integer.parseInt(etYear.getText().toString());
-                int stars = Math.round(rbStars.getRating());
+                rbSelected = findViewById(rgStars.getCheckedRadioButtonId());
+                int stars = Integer.parseInt(rbSelected.getText().toString());
+
 
                 DBHelper dbh = new DBHelper(MainActivity.this);
                 long inserted_id = dbh.insertSong(title, singers, year, stars);
